@@ -9,8 +9,5 @@
   "keywords": [],
   "author": "Provectus Inc.",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "bin": "./index.js"
 }
