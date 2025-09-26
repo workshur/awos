@@ -1,0 +1,22 @@
+name: Quality Check
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+permissions: {}
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Run prettier check
+        run: npx prettier . --check
