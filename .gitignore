@@ -1,1 +1,6 @@
 node_modules
+
+# AWOS installer artifacts (these are generated when users run npx @provectusinc/awos)
+.awos/
+.claude/
+context/
