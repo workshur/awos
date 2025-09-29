@@ -1,3 +1,20 @@
+# IMPORTANT: Package Installation Restrictions
+
+**DO NOT install the AWOS package during codebase contributions.** The command `npx @provectusinc/awos` should ONLY be run by end users who are setting up AWOS in their own projects, NOT by GitHub Copilot during development or when working on this repository.
+
+**Rationale:** The AWOS package installation process copies files and creates directories in the user's project workspace. This installation is intended for end users adopting the AWOS framework in their own projects, not for contributors working on the AWOS framework itself.
+
+**When to avoid installation:**
+- During any codebase contributions to this repository
+- When reviewing or testing changes to the AWOS framework
+- When debugging or fixing issues in the framework code
+
+**When installation is appropriate:**
+- Only when an end user wants to adopt AWOS in their own separate project
+- Only when explicitly requested by a user for their own project setup
+
+---
+
 # AWOS: Agentic Workflow Operating System
 
 This is a framework for spec-driven development using AI agents. It provides structured workflows that guide users from product vision to implementation through a series of specialized AI commands.
